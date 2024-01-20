@@ -1,0 +1,18 @@
+Windows Registry Editor Version 5.00
+
+;включить Защитник Windows
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender]
+"DisableAntiSpyware"=-
+"AllowFastServiceStartup"=-
+"ServiceKeepAlive"=-
+
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\Real-Time Protection]
+
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\Spynet]
+
+;[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WinDefend]
+;"Start"=dword:00000002
+
+;включить функцию «Защита от подделки»
+;[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\Features]
+;"TamperProtection"=dword:00000005
