@@ -8,7 +8,7 @@ class App(CTk):
     def __init__(self):
         super().__init__()
         self.title("переводчик")
-        self.minsize(360, 360)      
+        self.minsize(360, 360)
 
         main_frame = CTkFrame(self)
         main_frame.grid()
@@ -20,7 +20,7 @@ class App(CTk):
                                    corner_radius=10,width=200, height=100)
         user_textbox.grid(row=2, column=1, pady=(1, 10), padx=10)
 
-        lang_entry = CTkEntry(master=main_frame,placeholder_text="en", text_color="#FFCC70", border_color="#FFCC70", border_width=2, corner_radius=10, width=70)
+        lang_entry = CTkEntry(master=main_frame, placeholder_text="en", text_color="#FFCC70", border_color="#FFCC70", border_width=2, corner_radius=10, width=70)
         lang_entry.grid(row=4, column=0, pady=(1, 10), padx=10)
 
         login_button = CTkButton(master=main_frame, text="Перевести",
@@ -40,6 +40,9 @@ class App(CTk):
         self.pass_textbox = pass_textbox
         self.user_textbox = user_textbox
         self.lang_entry = lang_entry
+
+        # Bind the Enter key to the button_function
+        self.bind('<Return>', lambda event: self.button_function(user_textbox, lang_entry))
 
     def button_function(self, user_textbox, lang_entry):
         source_text = user_textbox.get("1.0", "end-1c")
