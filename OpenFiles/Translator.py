@@ -2,7 +2,6 @@ from customtkinter import *
 from googletrans import Translator
 import customtkinter
 
-
 class App(CTk):
     
     def __init__(self):
@@ -41,7 +40,7 @@ class App(CTk):
         self.user_textbox = user_textbox
         self.lang_entry = lang_entry
 
-        # Bind the Enter key to the button_function
+
         self.bind('<Return>', lambda event: self.button_function(user_textbox, lang_entry))
 
     def button_function(self, user_textbox, lang_entry):
@@ -53,7 +52,6 @@ class App(CTk):
         self.pass_textbox.insert("end", translation.text)
 
 app = App()
-
 customtkinter.set_appearance_mode("system")
 app.grid_rowconfigure(0, weight=1)
 app.grid_columnconfigure(0, weight=1)
