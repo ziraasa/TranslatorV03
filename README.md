@@ -2,10 +2,9 @@
 
 <h3></h3>
 <p align ="center">-----------------</p>
-<p align ="center">Первое cntrl v cntrl c работают только на английской расскладке</p>
-<p align ="center">Скачивайте setup.exe если хотите с загрузчиком. Translator.exe если сразу(работает на 10 windows)</p>
-<p align ="center">Программа translator.exe коды языков https://gist.github.com/JT5D/a2fdfefa80124a06f5a9</p>
-<p align ="center">Отдельно если интерестно код программы translator.py  и иконка er.ico в папке OpenFiles</p>
-<p align ="center">Возможно будет проблема с антивирусом. Открывать без антивируса в папке ifneed есть reg фаил с отключением и отдельно с включением Windows defendor</p>
+<p align ="center"> cntrl v cntrl c работают только на английской расскладке</p>
+<p align ="center">Скачивайте setup.exe </p>
+<p align ="center">коды языков https://gist.github.com/JT5D/a2fdfefa80124a06f5a9</p>
+<p align ="center">Если будет проблема с антивирусом. Открывать без антивируса в папке ifneed есть reg фаил с отключением и отдельно с включением Windows defendor, работает на Windows 10</p>
 <p align ="center">Работает на windows 10 и 11 </p>
 <p align ="center">-----------------</p>
